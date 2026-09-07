@@ -47,7 +47,7 @@ themeToggle.addEventListener("click", () => {
 const typingText = document.querySelector(".typing-text");
 
 const texts = [
-  "Full stack Node.js",
+  // "Full stack Node.js",
   "Frontend Developer",
   "React Developer",
   "Web Developer"
