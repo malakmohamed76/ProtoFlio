@@ -104,52 +104,52 @@ function typeEffect() {
 }
 
 typeEffect();
-///skill
+// ///skill
 
-const skills = document.querySelectorAll(".skill");
-const leftBtn = document.querySelector(".slider.left");
-const rightBtn = document.querySelector(".slider.right");
+// const skills = document.querySelectorAll(".skill");
+// const leftBtn = document.querySelector(".slider.left");
+// const rightBtn = document.querySelector(".slider.right");
 
-let currentPage = 0;
+// let currentPage = 0;
 
-const skillsPerPage = 3;
+// const skillsPerPage = 3;
 
-function showSkills() {
+// function showSkills() {
 
-  skills.forEach((skill, index) => {
+//   skills.forEach((skill, index) => {
 
-    const start = currentPage * skillsPerPage;
-    const end = start + skillsPerPage;
+//     const start = currentPage * skillsPerPage;
+//     const end = start + skillsPerPage;
 
-    if (index >= start && index < end) {
-      skill.style.display = "block";
-    } else {
-      skill.style.display = "none";
-    }
+//     if (index >= start && index < end) {
+//       skill.style.display = "block";
+//     } else {
+//       skill.style.display = "none";
+//     }
 
-  });
+//   });
 
-}
+// }
 
-rightBtn.addEventListener("click", () => {
+// rightBtn.addEventListener("click", () => {
 
-  if (currentPage < 1) {
-    currentPage++;
-    showSkills();
-  }
+//   if (currentPage < 1) {
+//     currentPage++;
+//     showSkills();
+//   }
 
-});
+// });
 
-leftBtn.addEventListener("click", () => {
+// leftBtn.addEventListener("click", () => {
 
-  if (currentPage > 0) {
-    currentPage--;
-    showSkills();
-  }
+//   if (currentPage > 0) {
+//     currentPage--;
+//     showSkills();
+//   }
 
-});
+// });
 
-showSkills();
+// showSkills();
 
 
 // Set skill percentages
